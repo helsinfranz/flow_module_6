@@ -65,6 +65,11 @@ pub contract interface NonFungibleToken {
                 self.ownedNFTs[id] != nil: "NFT does not exist in the collection!"
             }
         }
+        pub fun borrowAuthNFT(id: UInt64): &NFT {
+            pre {
+                self.ownedNFTs[id] != nil: "NFT does not exist in the collection!"
+            }
+        }
     }
 
     pub fun createEmptyCollection(): @Collection {
