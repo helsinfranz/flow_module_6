@@ -1,19 +1,20 @@
-# Solana_assignment
+# Flow_assignment
 
-Using a self-created SPL token to mint NFTs in Candy Machine UI 
+Add a function called borrowAuthNFT and make it publicly accessible to other people so they can read our NFT's metadata
 
 ## Description
 
-Creating an SPL token with name and Logo. Deploting your Candy Machine with all the NFT Collections in it.
-Then creating a UI that will use our created tokens in exchange for the NFT's minting
+Adding a function called borrowAuthNFT in the main cdc file like i have done in the file. And adding it to the interface file as well but only declaration like done on the other files too.
 
 ## Getting Started
 
 ### Executing program
 
-1. SPL Token Creation: In this we create a spl token that we are gonna use in further minting of NFTs, and naming it and giving it a logo as well.
-2. Candy Machine Deploy: Now we need to deploy the candy machine in the devnet with all the assets and their associated JSONs.
-3. Candy Machine UI: In this step we need to configure the UI with the deployed candy machine and then we can just connect our wallet and mint NFTs using our tokens.
+1. Deploy the interface contract and then deploy the main contract.
+2. Run the Create Collection tracnsaction.
+3. Run the Minting NFT tracnsaction.
+4. Run the scripts for GET_NFT_ID to get the nft id for running the main script.
+5. Run the scripts for MAIN_SCRIPT and it will return the data from the newly created function.
 
 ## License
 
